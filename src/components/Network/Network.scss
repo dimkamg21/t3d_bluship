@@ -1,0 +1,92 @@
+@import "../../utils/utils";
+
+.network {
+  width: 100%;
+
+  &_text-section {
+    padding-block: 54px;
+    width: 100%;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 50%,
+        rgb(11, 9, 28) 100%
+      ),
+      url(".././../assets/img/network_background.png"),
+      linear-gradient(to bottom, rgb(30, 7, 31), rgba(11, 9, 28));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_label {
+    margin-bottom: 32px;
+  }
+
+  &_headings {
+    margin-bottom: 24px;
+    text-align: center;
+
+  }
+
+  &_text {
+    // max-width: 677px;
+    margin-bottom: 42px;
+    padding-inline: 342px;
+    text-align: center;
+
+    @extend %regular-font-style;
+
+    @include onTablet {
+      padding-inline: 161px;
+    }
+
+    @include onLaptop {
+      padding-inline: 61px;
+    }
+
+    @include onMobile {
+      padding-inline: 32px;
+    }
+
+    @include onTinyMobile {
+      padding-inline: 16px;
+      font-size: 14px;
+    }
+  }
+
+  &_box {
+    display: inline;
+  }
+
+  &_carousel {
+    display: flex;
+    overflow: hidden;
+    gap: 72px;
+    padding-block: 10px;
+    background-color: rgb(11, 9, 28);
+
+    &-item {
+      margin-left: -60px;
+      min-width: 208px;
+      width: 208px;
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 33px;
+      border: 1px solid #1e1f35;
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import "../../utils/utils";
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stats {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  gap: 14px;
+
+  border: 2px solid #181a2c;
+  text-align: center;
+  padding: 12px 10px;
+
+  &:not(:last-child) {
+    border-right: none;
+  }
+
+  @include onLaptop {
+    width: 50%;
+    border-bottom: none;
+
+    &:not(:last-child) {
+      border-right: 2px solid #181a2c;
+    }
+
+    &:nth-child(odd) {
+      border-right: none;
+    }
+
+    &:nth-last-child(2),
+    &:nth-last-child(2) ~ & {
+      border-bottom: 2px solid #181a2c;
+    }
+  }
+
+  @include onTablet {
+  }
+
+  @include onMobile {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+  }
+
+  &_text {
+    text-align: left;
+    h2 {
+      @extend %desktop-stats-number;
+
+      @include onMobile {
+        font-size: 42px;
+        line-height: 54px;
+      }
+    }
+
+    p {
+      //styleName: Desktop/Small_Caption/Init;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0.03em;
+    }
+  }
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}

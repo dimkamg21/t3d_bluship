@@ -1,0 +1,18 @@
+@import "./utils/utils";
+
+body {
+  background-color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 112px;
+}
+
+.wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+// flex-direction: column;
+}

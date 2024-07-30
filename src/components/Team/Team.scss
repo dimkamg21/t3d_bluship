@@ -1,0 +1,138 @@
+@import "../../utils/utils";
+
+.team {
+  overflow: hidden;
+  margin-bottom: 164px;
+
+  &_gradient-line {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, #9e63ff 0%, #ff2da0 100%);
+  }
+
+  &_caption {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+    margin-bottom: 42px;
+
+    @include onMobile {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  &_text-section {
+    width: 60%;
+  }
+
+  &_text {
+    margin-top: 24px;
+    @extend %regular-font-style;
+  }
+
+  &_employees {
+    display: flex;
+    transition: transform 0.3s ease;
+    gap: 12px;
+    margin-inline: 3px;
+  }
+
+  &_navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    button {
+      height: 50px;
+      width: 50px;
+      background-color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 0 5px;
+      color: black;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.employee-card {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(90deg, #9e63ff 0%, #ff2da0 100%);
+    z-index: -1;
+    border-radius: 14px;
+  }
+
+  &:hover::before {
+    background: linear-gradient(0deg, #ff2da0 0%, #9e63ff 100%);
+  }
+}
+
+.employee-card .inner-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 45, 160, 0) 0%,
+    rgba(255, 45, 160, 0.367) 40%,
+    rgb(159, 99, 255) 95%
+  );
+}
+
+.employee-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 10%;
+  left: 10%;
+  color: white;
+}
+
+.employee-info h3 {
+  font-size: 24px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.employee-info p {
+  background: -webkit-linear-gradient(0deg, #9e63ff 0%, #ff2da0 100%);
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.role-badge {
+  width: min-content;
+  white-space: nowrap;
+  background: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+}

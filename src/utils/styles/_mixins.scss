@@ -1,0 +1,43 @@
+@import "./variables";
+
+@mixin onLargeDesktop {
+  @media (min-width: $breakpoint-large-desktop) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (max-width: $breakpoint-desktop-max)  {
+    @content;
+  }
+}
+
+@mixin onLaptop {
+  @media (max-width: $breakpoint-laptop-max) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (max-width: $breakpoint-tablet-max)  {
+    @content;
+  }
+}
+
+@mixin onMobile {
+  @media (max-width: $breakpoint-mobile-max) {
+    @content;
+  }
+}
+
+@mixin onTinyMobile {
+  @media (max-width: $breakpoint-tiny-mobile-max) and (min-width: $breakpoint-tiny-mobile-min) {
+    @content;
+  }
+}
+
+// @mixin onVerySmallScreen {
+//   @media (max-width: $breakpoint-very-small-screen-max) {
+//     @content;
+//   }
+// }

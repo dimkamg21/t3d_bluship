@@ -1,0 +1,66 @@
+@import "./variables";
+
+%text-style {
+  font-family: $font-family;
+  font-style: $font-style;
+  color: #fff;
+}
+
+%regular-font-style {
+  color: $regular-font-color;
+  font-size: 18px;
+  line-height: 28px;
+  // text-align: center;
+}
+
+%desktop-stats-number {
+  //styleName: Desktop/StatsNumber;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 64px;
+  text-align: left;
+}
+
+%mobile-stats-number {
+  //styleName: Mobile/StatsNumber;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 54px;
+  text-align: left;
+}
+
+@mixin h2-title-large {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 600;
+  font-size: $h2-font-size-large;
+  line-height: $h2-line-height-large;
+  // text-align: center;
+}
+
+@mixin h2-title-medium {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 600;
+  font-size: $h2-font-size-medium;
+  line-height: $h2-line-height-medium;
+  // text-align: center;
+}
+
+@mixin h2-title-small {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: 600;
+  font-size: $h2-font-size-small;
+  line-height: $h2-line-height-small;
+  // text-align: center;
+}
+
+%h3 {
+  //styleName: Desktop/H3;
+  @extend %text-style;
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+}

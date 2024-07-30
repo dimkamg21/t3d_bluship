@@ -1,0 +1,32 @@
+.box {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto; // Висота контейнера автоматично визначається вмістом
+}
+
+.blue-box {
+    position: absolute; // Змінено на absolute
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0, 0, 255, 0.263) 0%, rgba(0, 0, 255, 0) 70%);
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.blue-box1 {
+    top: 10%; // Змінено позицію, щоб елемент був видимим
+    left: 0;
+}
+
+.blue-box2 {
+    top: 50%; // Змінено позицію, щоб елемент був видимим
+    left: 50%; // Центрування елемента
+    transform: translateX(-50%); // Центрування елемента
+}
+
+.blue-box3 {
+    top: 90%; // Змінено позицію, щоб елемент був видимим
+    left: 10%;
+}

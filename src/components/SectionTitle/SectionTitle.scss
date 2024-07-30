@@ -1,0 +1,18 @@
+.section-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 32px;
+  height: 46px;
+  width: 141px;
+
+  background: linear-gradient(270deg, #FF2DA0 0%, #7063FF 50.4%, #16BAFF 99.32%);
+
+  clip-path: polygon(0 80%, 10% 100%, 100% 100%, 100% 20%, 90% 0, 0% 0);
+}

@@ -1,0 +1,40 @@
+// Breakpoints
+$breakpoint-large-desktop: 1921px;
+$breakpoint-desktop-max: 1920px;
+$breakpoint-desktop-min: 1441px;
+$breakpoint-laptop-max: 1440px;
+$breakpoint-laptop-min: 1081px;
+$breakpoint-tablet-max: 1080px;
+$breakpoint-tablet-min: 759px;
+$breakpoint-mobile-max: 758px;
+$breakpoint-mobile-min: 481px;
+$breakpoint-tiny-mobile-max: 480px;
+$breakpoint-tiny-mobile-min: 321px;
+$breakpoint-very-small-screen-max: 320px;
+
+// Container max widths
+$container-max-width-large-desktop: 1364px;
+$container-max-width-desktop: 1364px;
+$container-max-width-laptop: 1000px;
+
+// Padding for dynamic container widths
+$container-padding-tablet: 40px;
+$container-padding-mobile: 18px;
+
+// Font styles
+$font-family: "ClashGrotesk-Variable", sans-serif;
+$font-style: normal;
+
+// h2 font sizes and line heights
+$h2-font-size-large: 48px;
+$h2-line-height-large: 58px;
+$h2-font-size-medium: 42px;
+$h2-line-height-medium: 54px;
+$h2-font-size-small: 32px;
+$h2-line-height-small: 42px;
+
+// regular font
+$regular-font-color: #D6DAE3 ;
+
+// Card
+$card-height: 304px;
