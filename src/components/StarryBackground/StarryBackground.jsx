@@ -5,11 +5,13 @@ const StarryBackground = () => {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    canvas.height = document.documentElement.scrollHeight - 200;
-    canvas.width = document.documentElement.scrollWidth;
-
     const ctx = canvas.getContext('2d');
     const stars = 1000;
+
+    const setCanvasSize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = document.documentElement.scrollHeight - 200;
+    };
 
     const drawStars = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -27,13 +29,14 @@ const StarryBackground = () => {
     };
 
     const handleResize = () => {
-      canvas.width = document.documentElement.scrollWidth;
-      canvas.height = document.documentElement.scrollHeight - 200;
+      setCanvasSize();
       drawStars();
     };
 
-    window.addEventListener('resize', handleResize);
+    setCanvasSize();
     drawStars();
+    
+    window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -41,17 +44,15 @@ const StarryBackground = () => {
   }, []);
 
   return (
-    <>
-      <canvas
-        ref={canvasRef}
-        style={{
-          position: 'absolute',
-          zIndex: -1,
-          top: 0,
-          left: 0,
-        }}
-      />
-    </>
+    <canvas
+      ref={canvasRef}
+      style={{
+        position: 'absolute',
+        zIndex: -1,
+        top: 0,
+        left: 0,
+      }}
+    />
   );
 };
 
