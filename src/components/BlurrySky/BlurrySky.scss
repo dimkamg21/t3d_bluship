@@ -2,11 +2,11 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: auto; // Висота контейнера автоматично визначається вмістом
+    height: auto;
 }
 
 .blue-box {
-    position: absolute; // Змінено на absolute
+    position: absolute;
     overflow: hidden;
     width: 400px;
     height: 400px;
@@ -16,17 +16,17 @@
 }
 
 .blue-box1 {
-    top: 10%; // Змінено позицію, щоб елемент був видимим
+    top: 10%; 
     left: 0;
 }
 
 .blue-box2 {
-    top: 50%; // Змінено позицію, щоб елемент був видимим
-    left: 50%; // Центрування елемента
-    transform: translateX(-50%); // Центрування елемента
+    top: 50%; 
+    left: 50%;
+    transform: translateX(-50%); 
 }
 
 .blue-box3 {
-    top: 90%; // Змінено позицію, щоб елемент був видимим
+    top: 90%; 
     left: 10%;
 }

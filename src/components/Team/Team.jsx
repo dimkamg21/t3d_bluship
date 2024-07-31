@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect, useRef } from "react";
+import { ArrowIcon } from '../../assets/icons/ArrowIcon';
 import { SectionTitle } from "../SectionTitle/SectionTitle";
 import "./Team.scss";
 
@@ -7,7 +8,7 @@ export const Team = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1439);
   const [translateX, setTranslateX] = useState(0);
   const containerRef = useRef(null);
-  const cardRef = useRef(null); // Ref to get the card width
+  const cardRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -55,8 +56,8 @@ export const Team = () => {
           <p className="team_text">
             Bluship only partners with a select number of clients, enabling us
             to prioritize your business & provide the attention it deserves.
-            Wouldn&#39;t it be fantastic to have a team of highly experienced
-            CMOs on board without breaking the bank? The good news is, we&#39;ve
+            Wouldn&#39;t it be fantastic to have a team of <span>highly experienced
+            CMOs on board without breaking the bank?</span> The good news is, we&#39;ve
             got you covered.
           </p>
         </div>
@@ -70,7 +71,7 @@ export const Team = () => {
               src={employee.src}
               name={employee.name}
               position={employee.position}
-              cardRef={index === 0 ? cardRef : null} // Assign ref to the first card only
+              cardRef={index === 0 ? cardRef : null}
             />
           ))}
         </div>
@@ -78,8 +79,8 @@ export const Team = () => {
 
     {isSmallScreen && (
         <div className="team_navigation">
-          <button onClick={handlePrevClick}> &lt; </button>
-          <button onClick={handleNextClick}> &gt; </button>
+          <button onClick={handlePrevClick}><ArrowIcon /></button>
+          <button onClick={handleNextClick}><ArrowIcon /></button>
         </div>
     )}
 

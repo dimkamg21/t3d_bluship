@@ -18,8 +18,9 @@ function App() {
             <Team />
           </main>
         </div>
+
       </div>
-      <PreFooter />
+        <PreFooter />
     </>
   );
 }

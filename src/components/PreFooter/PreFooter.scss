@@ -1,51 +1,95 @@
 @import "../../utils/utils";
 
 .prefooter {
-  background-image: url("../../assets/img/prefooter_illustration.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left center;
+  position: relative;
+
+  height: 80vh;
+  width: 100vw;
+  font-size: 48px;
   overflow: hidden;
 
-  height: 706px;
+  @include onDesktop {
+    height: 706px;
+  }
 
-  width: 100vw;
-  display: flex;
-  justify-content: end;
+  @include onMobile {
+    height: 500px;
 
-  &_text-section {
-    padding-right: 15px;
-    max-width: 60%;
+    font-size: 42px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+    margin-top: 250px;
+    overflow: visible;
+  }
+
+  &_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vw;
+    object-fit: contain;
+    object-position: left top;
+    z-index: -1;
+
+    @include onLaptop {
+      height: auto;
+      top: auto;
+      bottom: 0;
+    }
 
     @include onMobile {
-      max-width: 100%;
-
-      align-items: center;
-      justify-content: center;
-
-      padding-inline: 20px;
-
-      padding-bottom: 400px;
+      object-fit: cover;
+      object-position: left top;
+      height: 100%;
     }
   }
 
-  & h2 span {
-    background: -webkit-linear-gradient(0deg, #9e63ff 0%, #ff2da0 100%);
-    font-weight: 600;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  &_fixer {
+    display: flex;
+    justify-content: end;
+  }
+
+  &_text-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+    @include onTablet {
+      width: 70%;
+    }
+
+    @include onMobile {
+      width: 100%;
+      align-items: start;
+      justify-content: start;
+      position: relative;
+      top: -250px;
+    }
+
+    @include onTinyMobile {
+      align-items: center;
+    }
+
+    & h2 {
+      font-size: 48px;
+
+      @include onTinyMobile {
+        text-align: center;
+      }
+      & span {
+        background: -webkit-linear-gradient(0deg, #9e63ff 0%, #ff2da0 100%);
+        font-weight: 600;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
   }
 
   &_text {
     margin-top: 24px;
     margin-bottom: 42px;
-
     text-align: left;
-
     @extend %regular-font-style;
   }
 }

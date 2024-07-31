@@ -7,12 +7,23 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  gap: 112px;
+  gap: 200px;
+
+  @include onLaptop {
+    gap: 164px;
+  }
+
+  @include onTablet {
+    gap: 112px;
+  }
+
+  @include onTinyMobile {
+    gap: 82px;
+  }
 }
 
 .wrapper {
   width: 100vw;
   display: flex;
   justify-content: center;
-// flex-direction: column;
 }
