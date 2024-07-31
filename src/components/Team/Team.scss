@@ -106,7 +106,7 @@
 
 .employee-card {
   position: relative;
-  height: auto;
+  
 
   &::before {
     content: "";
@@ -129,6 +129,12 @@
   position: relative;
   border-radius: 12px;
   overflow: hidden;
+
+  height: 312px;
+
+  @include onTablet {
+    height: 278px;
+  }
 }
 
 .gradient-overlay {
@@ -148,10 +154,16 @@
 .employee-info {
   position: absolute;
   display: flex;
+  gap: 2px;
   flex-direction: column;
-  bottom: 10%;
-  left: 10%;
+  bottom: 0;
+  left: 0;
   color: white;
+  margin: 24px;
+
+  @include onMobile {
+    margin: 12px;
+  }
 }
 
 .employee-info h3 {

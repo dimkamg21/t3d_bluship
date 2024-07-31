@@ -5,7 +5,7 @@ const StarryBackground = () => {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    canvas.height = document.documentElement.scrollHeight;
+    canvas.height = document.documentElement.scrollHeight - 200;
     canvas.width = document.documentElement.scrollWidth;
 
     const ctx = canvas.getContext('2d');
@@ -28,7 +28,7 @@ const StarryBackground = () => {
 
     const handleResize = () => {
       canvas.width = document.documentElement.scrollWidth;
-      canvas.height = document.documentElement.scrollHeight;
+      canvas.height = document.documentElement.scrollHeight - 200;
       drawStars();
     };
 
@@ -42,9 +42,6 @@ const StarryBackground = () => {
 
   return (
     <>
-      <div className="blue-box blue-box1"></div>
-      <div className="blue-box blue-box2"></div>
-      {/* <div className="blue-box blue-box3"></div> */}
       <canvas
         ref={canvasRef}
         style={{
