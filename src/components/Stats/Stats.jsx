@@ -7,12 +7,14 @@ import "./Stats.scss";
 
 const Stat = ({ Icon, number, text, background }) => (
   <div className="stats">
-    <div style={{ background }} className="icon-container">
-        <Icon />
-    </div>
-    <div className="stats_text">
-      <h2>{number}</h2>
-      <p>{text}</p>
+    <div className="stats_position">
+      <div style={{ background }} className="icon-container">
+          <Icon />
+      </div>
+      <div className="stats_text">
+        <h2>{number}</h2>
+        <p>{text}</p>
+      </div>
     </div>
   </div>
 );

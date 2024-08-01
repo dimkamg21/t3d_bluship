@@ -6,14 +6,13 @@
 }
 
 .stats {
-  display: flex;
+  // display: flex;
   width: 25%;
-  align-items: center;
-  gap: 14px;
+  // gap: 14px;
 
   border: 2px solid #181a2c;
-  text-align: center;
-  padding: 12px 10px;
+  // text-align: center;
+  padding: 42px 0;
 
   &:not(:last-child) {
     border-right: none;
@@ -41,9 +40,26 @@
   }
 
   @include onMobile {
-    flex-direction: column;
-    align-items: start;
-    gap: 0;
+    padding: 12px 0;
+  }
+
+  &_position {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: fit-content;
+
+    @include onLaptop {
+      margin-left: 14px;
+      align-items: start;
+    }
+
+    @include onMobile {
+      flex-direction: column;
+      align-items: start;
+      gap: 0;
+    }
   }
 
   &_text {
@@ -60,7 +76,7 @@
     p {
       font-size: 14px;
       font-weight: 600;
-      line-height: 1.57em; 
+      line-height: 1.57em;
       letter-spacing: 0.03em;
     }
   }
@@ -70,11 +86,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
+
+  svg {
+    width: 50px;
+    height: 50px;
+  }
 
   @include onMobile {
     margin-bottom: 10px;
+
+    width: 68px;
+    height: 68px;
+
+    svg {
+      width: 36px;
+      height: 36px;
+    }
   }
 }

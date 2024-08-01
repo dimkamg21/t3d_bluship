@@ -26,17 +26,16 @@ export const Footer = () => {
             <LogoIcon />
 
             <div className="footer-social-links">
-                <a href="#">
-                  <LinkedInIcon />
-                </a>
-                <a href="#">
-                  <TwitterIcon />
-                </a>
-                <a href="#">
-                  <MailIcon />
-                </a>
-              </div>
-
+              <a href="#">
+                <LinkedInIcon />
+              </a>
+              <a href="#">
+                <TwitterIcon />
+              </a>
+              <a href="#">
+                <MailIcon />
+              </a>
+            </div>
           </div>
           <div className="footer-services-section">
             <h3>SERVICES</h3>
@@ -44,22 +43,45 @@ export const Footer = () => {
 
             <div className="footer-services-columns">
               <ul>
-                <li>Graphic Design & Digital Illustration</li>
-                <li>Influencer Campaigns</li>
-                <li>Collaborations & Acquisition Marketing</li>
-                <li>Alpha Calls</li>
-                <li>PPC Marketing</li>
-                <li>Strategy & Advisory</li>
+                <li>
+                  <a href="#">Graphic Design & Digital Illustration</a>
+                </li>
+                <li>
+                  <a href="#">Influencer Campaigns</a>
+                </li>
+                <li>
+                  <a href="#">Collaborations & Acquisition Marketing</a>
+                </li>
+                <li>
+                  <a href="#">Alpha Calls</a>
+                </li>
+                <li>
+                  <a href="#">PPC Marketing</a>
+                </li>
+                <li>
+                  <a href="#">Strategy & Advisory</a>
+                </li>
               </ul>
               <ul>
-                <li>Discord Growth</li>
-                <li>Influencer Campaigns</li>
-                <li>Twitter Space Packages & Hosting</li>
-                <li>Development</li>
-                <li>Graphic Design & Digital</li>
-                <li>B2B & B2C Campaigns</li>
+                <li>
+                  <a href="#">Discord Growth</a>
+                </li>
+                <li>
+                  <a href="#">Influencer Campaigns</a>
+                </li>
+                <li>
+                  <a href="#">Twitter Space Packages & Hosting</a>
+                </li>
+                <li>
+                  <a href="#">Development</a>
+                </li>
+                <li>
+                  <a href="#">Graphic Design & Digital</a>
+                </li>
+                <li>
+                  <a href="#">B2B & B2C Campaigns</a>
+                </li>
               </ul>
-              
             </div>
 
             <div className="footer_text-section">
@@ -129,20 +151,44 @@ export const Footer = () => {
 
             <div className="footer-services-columns">
               <ul>
-                <li>Graphic Design & Digital Illustration</li>
-                <li>Influencer Campaigns</li>
-                <li>Collaborations & Acquisition Marketing</li>
-                <li>Alpha Calls</li>
-                <li>PPC Marketing</li>
-                <li>Strategy & Advisory</li>
+                <li>
+                  <a href="#">Graphic Design & Digital Illustration</a>
+                </li>
+                <li>
+                  <a href="#">Influencer Campaigns</a>
+                </li>
+                <li>
+                  <a href="#">Collaborations & Acquisition Marketing</a>
+                </li>
+                <li>
+                  <a href="#">Alpha Calls</a>
+                </li>
+                <li>
+                  <a href="#">PPC Marketing</a>
+                </li>
+                <li>
+                  <a href="#">Strategy & Advisory</a>
+                </li>
               </ul>
               <ul>
-                <li>Discord Growth</li>
-                <li>Influencer Campaigns</li>
-                <li>Twitter Space Packages & Hosting</li>
-                <li>Development</li>
-                <li>Graphic Design & Digital</li>
-                <li>B2B & B2C Campaigns</li>
+                <li>
+                  <a href="#">Discord Growth</a>
+                </li>
+                <li>
+                  <a href="#">Influencer Campaigns</a>
+                </li>
+                <li>
+                  <a href="#">Twitter Space Packages & Hosting</a>
+                </li>
+                <li>
+                  <a href="#">Development</a>
+                </li>
+                <li>
+                  <a href="#">Graphic Design & Digital</a>
+                </li>
+                <li>
+                  <a href="#">B2B & B2C Campaigns</a>
+                </li>
               </ul>
             </div>
 
