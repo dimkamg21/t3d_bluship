@@ -1,7 +1,7 @@
 @import "../../utils/utils";
 
 .team {
-  overflow: hidden;
+  // overflow: hidden;
   // margin-right: ;
   margin-bottom: 200px;
 
@@ -31,10 +31,14 @@
 
     @include onMobile {
       flex-direction: column;
-      gap: 12px;
+      gap: 32px;
       width: 100%;
 
       margin-top: 34px;
+    }
+
+    @include onTinyMobile {
+      gap: 16px;
     }
   }
 

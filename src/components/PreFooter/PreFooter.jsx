@@ -28,7 +28,7 @@ export const PreFooter = () => {
           className="prefooter_background"
         />
       )}
-      <div className="wrapper">
+      <div className="wrapper wrapper_fixer">
         <div className="container prefooter_fixer">
           <div className="prefooter_text-section">
             <h2>
