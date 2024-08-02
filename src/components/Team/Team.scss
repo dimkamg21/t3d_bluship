@@ -46,7 +46,10 @@
     }
 
     & h2 {
-      // width: 60%;
+      @include onTablet {
+        width: 80%;
+
+      }
     }
   }
 
@@ -67,6 +70,7 @@
 
     & span {
       font-weight: 600;
+      // font-family: ClashGrotesk-Regular;
     }
   }
 
@@ -96,7 +100,7 @@
     }
 
     @include onTinyMobile {
-      margin-top: 24pxpx;
+      margin-top: 24px;
     }
 
 

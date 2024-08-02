@@ -127,12 +127,16 @@
     //   gap: 40px;
     // }
 
-    @include onTablet {
-      gap: 42px;
-    }
+    // @include onTablet {
+    //   gap: 42px;
+    // }
+
+    // @include onLaptop {
+    //   gap: 22px;
+    // }
 
     @include onTinyMobile {
-      gap: 40px;
+      gap: 14px;
     }
 
     h3 {
@@ -281,6 +285,12 @@
           color: #ff2da0;
         }
 
+        @include onTinyMobile {
+          font-size: 12px;
+          line-height: 16px;
+
+        }
+
         //   @include onDesktop {
         //     font-size: 14px;
         //   }
@@ -368,6 +378,11 @@
     @include onTablet {
       font-size: 18px;
       line-height: 28px;
+    }
+
+    @include onTinyMobile {
+      font-size: 14px;
+
     }
 
     &:last-child {
