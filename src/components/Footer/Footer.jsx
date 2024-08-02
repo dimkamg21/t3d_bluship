@@ -88,17 +88,17 @@ export const Footer = () => {
               <p>
                 Building and growing communities is the foundation of Bluship.
                 Each piece of our content has a purpose and is designed to
-                convert curiosity into enthusiasm.
+                convert curiosity into enthusiasm. <br /> <br />
               </p>
               <p>
                 Web3 is a curious space because there is no formal education for
                 this industry. There is no course for curiosity, and that is the
-                philosophy that we want to push forward.
+                philosophy that we want to push forward. <br /> <br />
               </p>
               <p>
                 You have the opportunity to partner with a highly
                 growth-obsessed team that prioritizes creativity and innovation.
-                Your curiosity led you here. How far will it take you?
+                Your curiosity led you here. How far will it take you? <br /> <br />
               </p>
             </div>
 

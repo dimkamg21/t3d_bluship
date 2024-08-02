@@ -10,7 +10,7 @@ const StarryBackground = () => {
 
     const setCanvasSize = () => {
       canvas.width = window.innerWidth;
-      canvas.height = document.documentElement.scrollHeight - 200;
+      canvas.height = document.documentElement.scrollHeight - 400;
     };
 
     const drawStars = () => {

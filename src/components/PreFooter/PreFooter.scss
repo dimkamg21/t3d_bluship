@@ -3,13 +3,20 @@
 .prefooter {
   position: relative;
 
-  height: 80vh;
+  // height: 80vh;
+  height: 70vh;
+  min-height: 900px;
   width: 100vw;
   font-size: 48px;
   overflow: hidden;
 
   @include onDesktop {
     height: 706px;
+    min-height: auto;
+  }
+
+  @media (max-width: 1200px) {
+    height: 606px;
   }
 
   @include onLaptop {
@@ -17,7 +24,7 @@
   }
 
   @include onTablet {
-    height: 506px;
+    height: 526px;
   }
 
   @include onMobile {
@@ -41,15 +48,25 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vw;
+
+    // height: 100vw;
     object-fit: contain;
     object-position: left top;
     z-index: -1;
+
+    object-fit: cover;
+    object-position: center;
+    // top: auto;
+    // bottom: 0;
 
     @include onLaptop {
       height: auto;
       top: auto;
       bottom: 0;
+    }
+
+    @include onTablet {
+      // top: 0;
     }
 
     @include onMobile {
@@ -125,7 +142,7 @@
     margin-bottom: 42px;
     text-align: left;
     @extend %regular-font-style;
-    font-family: ClashGrotesk-Regular-Semibold;
+    font-family: ClashGrotesk-Regular;
 
     @include onTinyMobile {
       margin-top: 12px;
