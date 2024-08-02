@@ -36,7 +36,7 @@ body {
 
 @include onTinyMobile {
   h2 {
-    @include h2-title-small;
+    @include h2-title-tiny-small;
   }
 }
 

@@ -13,7 +13,7 @@
   }
 
   @include onMobile {
-    height: 500px;
+    // height: 500px;
 
     font-size: 42px;
 
@@ -38,9 +38,17 @@
     }
 
     @include onMobile {
-      object-fit: cover;
-      object-position: left top;
-      height: 100%;
+      object-position: bottom;
+      height: 100vw;
+    }
+
+    @include onTinyMobile {
+      // object-fit: cover;
+      // transform: scale(1.1);
+    // object-position: bottom;
+    // height: 100vw;
+    // width: 100%;
+    // transform-origin: center;
     }
   }
 
@@ -72,7 +80,7 @@
     }
 
     & h2 {
-      font-size: 48px;
+      // font-size: 48px;
 
       @include onTinyMobile {
         text-align: center;
@@ -91,5 +99,13 @@
     margin-bottom: 42px;
     text-align: left;
     @extend %regular-font-style;
+
+    @include onTinyMobile {
+      margin-top: 12px;
+      margin-bottom: 36px;
+
+      font-size: 14px;
+      line-height: 22px;;
+    }
   }
 }

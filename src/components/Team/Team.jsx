@@ -24,7 +24,7 @@ export const Team = () => {
 
   const handlePrevClick = () => {
     if (cardRef.current) {
-      const cardWidth = cardRef.current.offsetWidth + 12; // Card width plus gap
+      const cardWidth = cardRef.current.offsetWidth + 12 + 6; // Card width plus gap
       setTranslateX((prev) => Math.min(prev + cardWidth, 0));
     }
   };
@@ -32,7 +32,7 @@ export const Team = () => {
   const handleNextClick = () => {
     if (containerRef.current && cardRef.current) {
       const containerWidth = containerRef.current.offsetWidth;
-      const cardWidth = cardRef.current.offsetWidth + 12; // Card width plus gap
+      const cardWidth = cardRef.current.offsetWidth + 12 + 4; // Card width plus gap
       const totalCardsWidth = cardWidth * employees.length;
       const maxTranslateX = Math.min(containerWidth - totalCardsWidth, 0);
 

@@ -41,27 +41,37 @@
     }
 
     & h2 {
-      width: 60%;
+      // width: 60%;
     }
   }
 
   &_text {
     margin-top: 24px;
     @extend %regular-font-style;
+    font-weight: 600;
+    font-family: ClashGrotesk-Regular-Semibold;
+    letter-spacing: .5px;
 
     @include onMobile {
       width: 100%;
     }
 
+    @include onTinyMobile {
+      margin-top: 12px;
+    }
+
     & span {
-      font-weight: 600;
+      font-weight: 800;
     }
   }
 
   &_employees {
     display: flex;
+    overflow-x: visible;
     transition: transform 0.3s ease;
-    gap: 12px;
+
+    // gap 12 + border (3 + 3)
+    gap: 18px;
     margin-inline: 3px;
     margin-bottom: 3px;
   }
@@ -70,10 +80,18 @@
     display: flex;
     justify-content: center;
     margin-top: 64px;
+    gap: 12px;
+
+    @include onTablet {
+      margin-top: 32px;
+    }
 
     @include onMobile {
-      margin-top: 32px;
       justify-content: start;
+    }
+
+    @include onTinyMobile {
+      margin-top: 24pxpx;
     }
 
 
@@ -86,8 +104,13 @@
       cursor: pointer;
       border-radius: 43px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin: 0 12px;
+      // margin: 0 12px;
       color: black;
+
+      @include onMobile {
+        height: 40px;
+        width: 73px;
+      }
 
       &:last-child {
         rotate: 180deg;
@@ -100,6 +123,19 @@
       &:focus {
         outline: none;
       }
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      @include onMobile {
+        svg {
+          width: 25px;
+          height: 24px;
+        }
+      }
+      
     }
   }
 }
@@ -129,11 +165,27 @@
   position: relative;
   border-radius: 12px;
   overflow: hidden;
+  // text-align: center;
 
   height: 312px;
+  width: 241.5px;
 
   @include onTablet {
     height: 278px;
+    width: calc(222px - 6px);
+  }
+
+  @include onTablet {
+    height: 278px;
+    width: calc(212px - 6px);
+  }
+
+  img {
+    // display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
@@ -161,7 +213,7 @@
   color: white;
   margin: 24px;
 
-  @include onMobile {
+  @include onTablet {
     margin: 12px;
   }
 }
@@ -176,6 +228,9 @@
   font-weight: 600;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
 }
 
 .role-badge {

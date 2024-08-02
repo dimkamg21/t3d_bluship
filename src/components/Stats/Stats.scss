@@ -51,14 +51,20 @@
     width: fit-content;
 
     @include onLaptop {
-      margin-left: 14px;
+      margin-left: 24px;
       align-items: start;
     }
 
+    @include onTablet {
+      // margin-left: 24px;
+      align-items: center;
+    }
+
     @include onMobile {
+      margin-inline: 10px;
       flex-direction: column;
       align-items: start;
-      gap: 0;
+      gap: 12px;
     }
   }
 
@@ -78,6 +84,7 @@
       font-weight: 600;
       line-height: 1.57em;
       letter-spacing: 0.03em;
+      color: #F7F7FA;
     }
   }
 }
@@ -86,8 +93,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 72px;
-  height: 72px;
+  width: 74px;
+  height: 74px;
   border-radius: 50%;
 
   svg {
@@ -96,7 +103,7 @@
   }
 
   @include onMobile {
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 
     width: 68px;
     height: 68px;

@@ -26,12 +26,20 @@
   &_label {
     margin-bottom: 32px;
     line-height: 2em;
+
+    @include onTinyMobile {
+      margin-bottom: 16px;
+    }
   }
 
   &_headings {
     margin-bottom: 24px;
     text-align: center;
     // line-height: 3.625em;
+
+    @include onTinyMobile {
+      margin-bottom: 12px;
+    }
   }
 
   &_text {
@@ -42,12 +50,12 @@
 
     @extend %regular-font-style;
 
-    @include onTablet {
+    @include  onLaptop {
       padding-inline: 161px;
     }
 
-    @include onLaptop {
-      padding-inline: 61px;
+    @include onTablet {
+      padding-inline: 64px;
     }
 
     @include onMobile {
@@ -55,8 +63,9 @@
     }
 
     @include onTinyMobile {
-      padding-inline: 16px;
+      padding-inline: 12px;
       font-size: 14px;
+      margin-bottom: 36px;
     }
   }
 
@@ -66,13 +75,14 @@
 
   &_carousel {
     display: flex;
+    justify-content: center;
     overflow: hidden;
-    gap: 72px;
-    padding-block: 10px;
+    gap: 12px;
+    padding-block: 12px 32px;
     background-color: rgb(11, 9, 28);
 
     &-item {
-      margin-left: -60px;
+      // margin-left: -85px;
       min-width: 208px;
       width: 208px;
       height: 88px;

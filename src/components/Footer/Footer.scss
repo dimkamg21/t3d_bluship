@@ -56,7 +56,17 @@
     flex-direction: column;
     justify-content: space-between;
 
-    gap: 72px;
+    max-width: 376px;
+
+    @include onLaptop {
+      max-width: 357px;
+    }
+
+    @include onTablet {
+      max-width: 100%;
+    }
+
+    // gap: 72px;
 
     svg {
       height: 70px;
@@ -134,7 +144,7 @@
       justify-content: space-between;
 
       @include onTablet {
-        justify-content: start;
+        // justify-content: start;
       }
 
       @include onMobile {
@@ -272,6 +282,16 @@
   display: flex;
   gap: 20px;
 
+  @include onLaptop {
+    gap: 12px;
+   
+  }
+
+  @include onTinyMobile {
+    gap: 8px;
+   
+  }
+
   a {
     display: inline-block;
     // width: 40px;
@@ -290,9 +310,17 @@
     }
 
     @include onLaptop {
-      gap: 12px;
+      // gap: 12px;
       max-width: 48px;
       max-height: 48px;
+    }
+
+    @include onTinyMobile {
+      // gap: 8px;
+      padding: 10px;
+
+      max-width: 40px;
+      max-height: 40px;
     }
 
     img {
@@ -303,13 +331,20 @@
 }
 
 .footer_text-section {
+  // max-width: 376px;
+
+  // @include onLaptop {
+  //   max-width: 357px;
+  // }
+
   @include onTablet {
     margin-block: 22px;
   }
 
   p {
     @extend %regular-font-style;
-    color: #5d577d;
+    color: #545163;
+;
     margin-bottom: 10px;
     line-height: 1.6;
     font-weight: 500;

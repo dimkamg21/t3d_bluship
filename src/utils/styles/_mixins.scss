@@ -31,7 +31,7 @@
 }
 
 @mixin onTinyMobile {
-  @media (max-width: $breakpoint-tiny-mobile-max) and (min-width: $breakpoint-tiny-mobile-min) {
+  @media (max-width: $breakpoint-tiny-mobile-max) {
     @content;
   }
 }
