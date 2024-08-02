@@ -12,6 +12,10 @@
     margin-bottom: 112px;
   }
 
+  @include onTinyMobile {
+    margin-bottom: 82px;
+  }
+
   &_gradient-line {
     height: 2px;
     width: 100%;
