@@ -26,7 +26,7 @@
 
     font-size: 42px;
 
-    margin-top: 300px;
+    margin-top: 350px;
     overflow: visible;
   }
 
@@ -97,7 +97,7 @@
       align-items: start;
       justify-content: start;
       position: relative;
-      top: -300px;
+      top: -350px;
     }
 
     @include onTinyMobile {
