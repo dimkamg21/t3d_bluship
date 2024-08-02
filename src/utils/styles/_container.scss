@@ -8,6 +8,7 @@
 
   @include onDesktop {
     max-width: $container-max-width-desktop;
+    width: 100%;
   }
 
   @include onLaptop {
