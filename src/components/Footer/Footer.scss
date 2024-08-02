@@ -123,8 +123,16 @@
     gap: 22px;
     flex: 2;
 
+    // @include onTablet {
+    //   gap: 40px;
+    // }
+
     @include onTablet {
       gap: 42px;
+    }
+
+    @include onTinyMobile {
+      gap: 40px;
     }
 
     h3 {
@@ -149,6 +157,10 @@
 
       @include onMobile {
         gap: 32px;
+      }
+
+      @include onTinyMobile {
+        gap: 12px;
       }
 
       ul {

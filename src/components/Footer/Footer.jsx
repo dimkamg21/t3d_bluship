@@ -98,7 +98,7 @@ export const Footer = () => {
               <p>
                 You have the opportunity to partner with a highly
                 growth-obsessed team that prioritizes creativity and innovation.
-                Your curiosity led you here. How far will it take you? <br /> <br />
+                Your curiosity led you here. How far will it take you?
               </p>
             </div>
 
