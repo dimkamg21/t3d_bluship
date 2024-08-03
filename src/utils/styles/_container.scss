@@ -17,20 +17,14 @@
   }
 
   @include onTablet {
-    // padding-left: $container-padding-tablet;
-    // padding-right: $container-padding-tablet;
     width: calc(100% - #{$container-padding-tablet * 2});
   }
 
   @include onMobile {
-    // padding-left: $container-padding-mobile;
-    // padding-right: $container-padding-mobile;
     width: calc(100% - #{$container-padding-mobile * 2});
   }
 
   @include onTinyMobile {
-    // padding-left: $container-padding-mobile;
-    // padding-right: $container-padding-mobile;
     max-width: calc(100% - #{$container-padding-mobile * 2});
   }
 }

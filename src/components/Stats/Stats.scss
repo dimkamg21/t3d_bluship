@@ -6,12 +6,8 @@
 }
 
 .stats {
-  // display: flex;
   width: 25%;
-  // gap: 14px;
-
   border: 2px solid #181a2c;
-  // text-align: center;
   padding: 42px 0;
 
   &:not(:last-child) {
@@ -36,9 +32,6 @@
     }
   }
 
-  @include onTablet {
-  }
-
   @include onMobile {
     padding: 12px 0;
   }
@@ -56,7 +49,6 @@
     }
 
     @include onTablet {
-      // margin-left: 24px;
       align-items: center;
     }
 
@@ -70,6 +62,7 @@
 
   &_text {
     text-align: left;
+
     h2 {
       @extend %desktop-stats-number;
 
@@ -103,8 +96,6 @@
   }
 
   @include onMobile {
-    // margin-bottom: 10px;
-
     width: 68px;
     height: 68px;
 

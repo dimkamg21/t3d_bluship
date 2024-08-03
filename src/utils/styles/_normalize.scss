@@ -40,11 +40,6 @@ body {
   }
 }
 
-// Стилі для інших типів тексту
-// h3 {
-//   @extend %subtitle-text;
-// }
-
 p, span, a, li, button {
   @extend %text-style;
 }
@@ -53,4 +48,3 @@ h3 {
   @extend %h3;
 }
 
-// Приклад для меню тексту і кнопок

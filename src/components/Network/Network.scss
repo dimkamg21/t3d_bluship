@@ -35,7 +35,6 @@
   &_headings {
     margin-bottom: 24px;
     text-align: center;
-    // line-height: 3.625em;
 
     @include onTinyMobile {
       margin-bottom: 12px;
@@ -82,7 +81,6 @@
     background-color: rgb(11, 9, 28);
 
     &-item {
-      // margin-left: -85px;
       min-width: 208px;
       width: 208px;
       height: 88px;
