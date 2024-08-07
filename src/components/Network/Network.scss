@@ -39,6 +39,14 @@
     @include onTinyMobile {
       margin-bottom: 12px;
     }
+
+    &-devider {
+      display: none;
+
+      @include onTablet {
+        display: block;
+      }
+    }
   }
 
   &_text {
